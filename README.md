@@ -18,6 +18,16 @@ pip install -r requirements.txt
 
 ## Experiments
 
+### Weight Regularization
+
+To reproduce the weight regularization experiment results, run the following script
+
+```
+python main_weight_regularization.py
+```
+The model `.pt` files will be saved in the `./models` directory, and the plots will be saved in the `./images` directory.
+
+
 ### Activation Function
 
 To reproduce the activation function experiment results, run the following script
