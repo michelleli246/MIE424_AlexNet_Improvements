@@ -11,7 +11,7 @@ from torch.utils.data import random_split
 from torchvision.datasets import CIFAR10
 from torchvision.datasets import CIFAR100
 
-from alex import *
+from models.alex import *
 
 def evaluate(dl, device, model):
     total = 0
