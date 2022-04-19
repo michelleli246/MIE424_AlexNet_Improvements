@@ -1,5 +1,8 @@
 # MIE424_AlexNet_Improvements
 
+## Abstract
+In 2012, AlexNet was a major breakthrough for the field of deep learning. It greatly outperformed previous methods on the LSVRC-2010 ImageNet dataset which began a deep learning revolution. Since then, many new modifications to improve neural networks have been proposed without significant changes to the size of the network. In this paper, we explore the following modifications on the original AlexNet architecture: learning rate, optimizers, weight regularization, activation functions, and dropout. Each of these modifications were isolated from each other to observe their individual effects, then consolidated into one final model with the optimal settings. Out of the experiments, our results show that a learning rate of 1e-4 is optimal, Adam is the optimal optimizer, Elastic Net with L1=1e-4*0.05 and L2=1e-4*0.95 is the optimal weight regularization, LeakyReLU is the optimal activation function, and p=0.25 is the optimal dropout. Finally, we used the best techniques and hyperparameters to trained a consolidated model.
+
 ## Installation
 
 This section will cover the requirements to set up the training environment.
@@ -17,6 +20,16 @@ pip install -r requirements.txt
 ```
 
 ## Experiments
+
+### Weight Regularization
+
+To reproduce the weight regularization experiment results, run the following script
+
+```
+python main_weight_regularization.py
+```
+The model `.pt` files will be saved in the `./models` directory, and the plots will be saved in the `./images` directory.
+
 
 ### Activation Function
 
